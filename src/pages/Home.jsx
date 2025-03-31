@@ -19,7 +19,7 @@ function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/item/ins", property);
+      await axios.post("https://react-backend-8s4z.onrender.com/item/ins", property);
       alert("Property added successfully!");
       setProperty({title: "",
         desc: "", 
